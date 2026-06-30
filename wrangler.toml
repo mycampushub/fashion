@@ -9,7 +9,7 @@ main = ".open-next/worker.js"
 # Environment Variables
 # IMPORTANT: Set these in Cloudflare Dashboard for production deployment
 # 1. Go to: https://dash.cloudflare.com/
-# 2. Navigate to: Workers & Pages > scommerce > Settings > Environment Variables
+# 2. Navigate to: Workers & Pages > fashion > Settings > Environment Variables
 # 3. Add the following variables:
 #    - JWT_SECRET: Generate with: openssl rand -base64 48 | tr -d '/+=' | cut -c1-64
 #    - ADMIN_SECRET: Generate with: openssl rand -base64 48 | tr -d '/+=' | cut -c1-64

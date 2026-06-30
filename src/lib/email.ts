@@ -8,24 +8,24 @@ const EMAIL_CONFIG = {
   // Resend configuration
   resend: {
     apiKey: process.env.RESEND_API_KEY || '',
-    from: process.env.EMAIL_FROM || 'noreply@scommerce.com',
+    from: process.env.EMAIL_FROM || 'noreply@fashion.com',
   },
 
   // SendGrid configuration
   sendgrid: {
     apiKey: process.env.SENDGRID_API_KEY || '',
-    from: process.env.EMAIL_FROM || 'noreply@scommerce.com',
+    from: process.env.EMAIL_FROM || 'noreply@fashion.com',
   },
 
   // AWS SES configuration
   ses: {
     region: process.env.AWS_REGION || 'us-east-1',
-    from: process.env.EMAIL_FROM || 'noreply@scommerce.com',
+    from: process.env.EMAIL_FROM || 'noreply@fashion.com',
   },
 
   // Mock configuration for development/testing
   mock: {
-    from: process.env.EMAIL_FROM || 'noreply@scommerce.com',
+    from: process.env.EMAIL_FROM || 'noreply@fashion.com',
   },
 };
 
@@ -230,7 +230,7 @@ export async function sendVerificationEmail(data: VerificationEmailData): Promis
       </head>
       <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
         <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
-          <h1 style="color: #2563eb;">Welcome to SCommerce!</h1>
+          <h1 style="color: #2563eb;">Welcome to Fashion!</h1>
           <p>Hi ${data.name || 'there'},</p>
           <p>Thank you for signing up. Please verify your email address by clicking the button below:</p>
           <div style="text-align: center; margin: 30px 0;">
@@ -241,7 +241,7 @@ export async function sendVerificationEmail(data: VerificationEmailData): Promis
           <p>This link will expire in 24 hours.</p>
           <p>If you didn't create an account, you can safely ignore this email.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
-          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} SCommerce. All rights reserved.</p>
+          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} Fashion. All rights reserved.</p>
         </div>
       </body>
     </html>
@@ -251,7 +251,7 @@ export async function sendVerificationEmail(data: VerificationEmailData): Promis
     to: data.to,
     subject: 'Verify your email address',
     html,
-    text: `Welcome to SCommerce! Please verify your email by visiting: ${verifyUrl}`,
+    text: `Welcome to Fashion! Please verify your email by visiting: ${verifyUrl}`,
   });
 }
 
@@ -283,7 +283,7 @@ export async function sendPasswordResetEmail(data: PasswordResetEmailData): Prom
           <p>This link will expire in 1 hour.</p>
           <p style="color: #dc2626; font-weight: bold;">If you didn't request this password reset, please ignore this email.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
-          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} SCommerce. All rights reserved.</p>
+          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} Fashion. All rights reserved.</p>
         </div>
       </body>
     </html>
@@ -347,7 +347,7 @@ export async function sendOrderConfirmationEmail(data: OrderConfirmationEmailDat
           
           <p>You'll receive a shipping confirmation email once your order ships.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
-          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} SCommerce. All rights reserved.</p>
+          <p style="color: #666; font-size: 12px;">© ${new Date().getFullYear()} Fashion. All rights reserved.</p>
         </div>
       </body>
     </html>

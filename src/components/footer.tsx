@@ -82,7 +82,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://www.instagram.com/scommerce"
+                  href="https://www.instagram.com/fashion"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -93,7 +93,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/scommerce"
+                  href="https://www.facebook.com/fashion"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -104,7 +104,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.twitter.com/scommerce"
+                  href="https://www.twitter.com/fashion"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -115,7 +115,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/@scommerce"
+                  href="https://www.youtube.com/@fashion"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -126,7 +126,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/company/scommerce"
+                  href="https://www.linkedin.com/company/fashion"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"

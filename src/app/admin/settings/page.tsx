@@ -110,13 +110,13 @@ export default function AdminSettingsPage() {
   // Site Settings
   const [settings, setSettings] = useState<SiteSettings>({
     id: 'default',
-    siteName: 'SCommerce',
+    siteName: 'Fashion',
     currency: 'BDT',
     currencySymbol: '৳',
     taxRate: 0.18,
     freeShippingThreshold: 5000,
     baseShippingCost: 150,
-    contactEmail: 'contact@scommerce.com',
+    contactEmail: 'contact@fashion.com',
     contactPhone: '+8801XXXXXXXXX',
     socialMedia: {
       facebook: '',
@@ -125,8 +125,8 @@ export default function AdminSettingsPage() {
       youtube: '',
     },
     seo: {
-      metaTitle: 'SCommerce - Your Online Fashion Store',
-      metaDescription: 'Discover the latest fashion trends at SCommerce. Shop sarees, salwar suits, lehengas, and more.',
+      metaTitle: 'Fashion - Your Online Fashion Store',
+      metaDescription: 'Discover the latest fashion trends at Fashion. Shop sarees, salwar suits, lehengas, and more.',
       keywords: 'fashion, saree, salwar, lehenga, online shopping',
     },
   })
@@ -255,13 +255,13 @@ export default function AdminSettingsPage() {
   const handleReset = () => {
     setSettings({
       id: 'default',
-      siteName: 'SCommerce',
+      siteName: 'Fashion',
       currency: 'BDT',
       currencySymbol: '৳',
       taxRate: 0.18,
       freeShippingThreshold: 5000,
       baseShippingCost: 150,
-      contactEmail: 'contact@scommerce.com',
+      contactEmail: 'contact@fashion.com',
       contactPhone: '+8801XXXXXXXXX',
       socialMedia: {
         facebook: '',
@@ -270,8 +270,8 @@ export default function AdminSettingsPage() {
         youtube: '',
       },
       seo: {
-        metaTitle: 'SCommerce - Your Online Fashion Store',
-        metaDescription: 'Discover the latest fashion trends at SCommerce. Shop sarees, salwar suits, lehengas, and more.',
+        metaTitle: 'Fashion - Your Online Fashion Store',
+        metaDescription: 'Discover the latest fashion trends at Fashion. Shop sarees, salwar suits, lehengas, and more.',
         keywords: 'fashion, saree, salwar, lehenga, online shopping',
       },
     })
@@ -479,7 +479,7 @@ export default function AdminSettingsPage() {
                   id="siteName"
                   value={settings.siteName}
                   onChange={(e) => setSettings({ ...settings, siteName: e.target.value })}
-                  placeholder="SCommerce"
+                  placeholder="Fashion"
                   className="max-w-md"
                 />
               </div>
@@ -606,7 +606,7 @@ export default function AdminSettingsPage() {
                   type="email"
                   value={settings.contactEmail || ''}
                   onChange={(e) => setSettings({ ...settings, contactEmail: e.target.value })}
-                  placeholder="contact@scommerce.com"
+                  placeholder="contact@fashion.com"
                   className="max-w-md"
                 />
               </div>
@@ -751,7 +751,7 @@ export default function AdminSettingsPage() {
                     ...settings, 
                     seo: { ...settings.seo, metaTitle: e.target.value } 
                   })}
-                  placeholder="SCommerce - Your Online Fashion Store"
+                  placeholder="Fashion - Your Online Fashion Store"
                   className="w-full"
                 />
                 <p className="text-sm text-gray-500 mt-1">
@@ -768,7 +768,7 @@ export default function AdminSettingsPage() {
                     ...settings, 
                     seo: { ...settings.seo, metaDescription: e.target.value } 
                   })}
-                  placeholder="Discover the latest fashion trends at SCommerce"
+                  placeholder="Discover the latest fashion trends at Fashion"
                   rows={4}
                   className="w-full"
                 />
@@ -1210,7 +1210,7 @@ export default function AdminSettingsPage() {
                     <Input
                       value={emailForm.fromEmail}
                       onChange={(e) => setEmailForm({ ...emailForm, fromEmail: e.target.value })}
-                      placeholder="noreply@scommerce.com"
+                      placeholder="noreply@fashion.com"
                     />
                   </div>
                   <div>
@@ -1218,7 +1218,7 @@ export default function AdminSettingsPage() {
                     <Input
                       value={emailForm.fromName}
                       onChange={(e) => setEmailForm({ ...emailForm, fromName: e.target.value })}
-                      placeholder="SCommerce"
+                      placeholder="Fashion"
                     />
                   </div>
                 </div>

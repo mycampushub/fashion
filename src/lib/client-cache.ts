@@ -82,7 +82,7 @@ class MemoryCache {
  * LocalStorage-based caching
  */
 export class LocalStorageCache {
-  private prefix = 'scommerce_cache_';
+  private prefix = 'fashion_cache_';
 
   set<T>(key: string, data: T, ttl: number): void {
     try {
@@ -154,7 +154,7 @@ export class LocalStorageCache {
  * IndexedDB-based caching for large data
  */
 export class IndexedDBCache {
-  private dbName = 'scommerce_cache';
+  private dbName = 'fashion_cache';
   private storeName = 'cache';
   private db: IDBDatabase | null = null;
   private initPromise: Promise<void> | null = null;

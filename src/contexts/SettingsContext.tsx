@@ -13,13 +13,13 @@ const SettingsContext = createContext<SettingsContextType | undefined>(undefined
 
 const defaultSettings: SiteSettings = {
   id: 'default',
-  siteName: 'SCommerce',
+  siteName: 'Fashion',
   currency: 'BDT',
   currencySymbol: '৳',
   taxRate: 0.18,
   freeShippingThreshold: 5000,
   baseShippingCost: 150,
-  contactEmail: 'contact@scommerce.com',
+  contactEmail: 'contact@fashion.com',
   contactPhone: '+8801XXXXXXXXX',
 }
 

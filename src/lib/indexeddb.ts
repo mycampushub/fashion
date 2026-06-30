@@ -4,7 +4,7 @@
  * Used for offline support, caching, and data persistence
  */
 
-const DB_NAME = 'scommerce-db';
+const DB_NAME = 'fashion-db';
 const DB_VERSION = 1;
 
 export enum IndexedDBStore {

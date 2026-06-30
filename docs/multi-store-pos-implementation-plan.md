@@ -3899,14 +3899,14 @@ bun run start
 
 **Configuration (wrangler.toml)**
 ```toml
-name = "scommerce"
+name = "fashion"
 main = "src/worker.ts"
 compatibility_date = "2024-01-01"
 
 # D1 Database
 [[d1_databases]]
 binding = "DB"
-database_name = "scommerce-db"
+database_name = "fashion-db"
 database_id = "your-database-id"
 
 # KV Storage (for caching)
@@ -3929,10 +3929,10 @@ ALLOWED_ORIGINS = "https://yourdomain.com"
 npx wrangler deploy
 
 # Deploy POS service as separate worker
-npx wrangler deploy pos-service --name scommerce-pos
+npx wrangler deploy pos-service --name fashion-pos
 
 # Deploy realtime service as separate worker
-npx wrangler deploy realtime-service --name scommerce-realtime
+npx wrangler deploy realtime-service --name fashion-realtime
 ```
 
 ---
@@ -4003,7 +4003,7 @@ import { uploadToR2 } from '@/lib/r2';
 
 async function backupDatabase() {
   const date = new Date().toISOString().split('T')[0];
-  const filename = `scommerce-db-${date}.sql`;
+  const filename = `fashion-db-${date}.sql`;
 
   // Export database
   exec(`bun run db:export > ${filename}`, async (error) => {

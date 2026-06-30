@@ -17,7 +17,7 @@ interface ProductStructuredDataProps {
   siteUrl?: string
 }
 
-export function ProductStructuredData({ product, siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://scommerce.com' }: ProductStructuredDataProps) {
+export function ProductStructuredData({ product, siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://fashion.com' }: ProductStructuredDataProps) {
   if (!product) return null
 
   const productUrl = `${siteUrl}/product/${product.slug}`
@@ -96,8 +96,8 @@ interface OrganizationStructuredDataProps {
 }
 
 export function OrganizationStructuredData({
-  siteName = 'SCommerce',
-  siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://scommerce.com',
+  siteName = 'Fashion',
+  siteUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'https://fashion.com',
   logo = '/logo.svg',
   description = 'Modern e-commerce platform for fashion and lifestyle products'
 }: OrganizationStructuredDataProps) {

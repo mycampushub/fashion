@@ -119,11 +119,11 @@ function transformReelToShortVideo(reel: ReelApiResponse): ShortVideo {
     },
     user: {
       id: 'default',
-      name: 'SCommerce',
-      username: '@scommerce',
+      name: 'Fashion',
+      username: '@fashion',
       avatar: 'https://via.placeholder.com/100'
     },
-    audio: 'Original Sound - SCommerce',
+    audio: 'Original Sound - Fashion',
     likes: Math.floor(Math.random() * 50000) + 10000,
     comments: Math.floor(Math.random() * 1000) + 100,
     shares: Math.floor(Math.random() * 500) + 50,

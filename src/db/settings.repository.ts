@@ -59,13 +59,13 @@ export class SettingsRepository {
   static getDefaultSettings(): SiteSettings {
     return {
       id: 'default',
-      siteName: 'SCommerce',
+      siteName: 'Fashion',
       currency: 'BDT',
       currencySymbol: '৳',
       taxRate: 0.18, // 18%
       freeShippingThreshold: 5000,
       baseShippingCost: 150,
-      contactEmail: 'contact@scommerce.com',
+      contactEmail: 'contact@fashion.com',
       contactPhone: '+8801XXXXXXXXX',
       socialMedia: {
         facebook: '',
@@ -74,8 +74,8 @@ export class SettingsRepository {
         youtube: '',
       },
       seo: {
-        metaTitle: 'SCommerce - Your Online Fashion Store',
-        metaDescription: 'Discover the latest fashion trends at SCommerce. Shop sarees, salwar suits, lehengas, and more.',
+        metaTitle: 'Fashion - Your Online Fashion Store',
+        metaDescription: 'Discover the latest fashion trends at Fashion. Shop sarees, salwar suits, lehengas, and more.',
         keywords: 'fashion, saree, salwar, lehenga, online shopping',
       },
     };

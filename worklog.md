@@ -1,14 +1,14 @@
-# SCOMMERCE PROJECT SETUP AND FIXES
+# FASHION PROJECT SETUP AND FIXES
 
 ## Date: 2026-06-16
 
 ## Overview
-This document tracks the work done to clone the SCOMMERCE project, fix variant-related issues, and add comprehensive seed data for popular beauty brands in Bangladesh.
+This document tracks the work done to clone the FASHION project, fix variant-related issues, and add comprehensive seed data for popular beauty brands in Bangladesh.
 
 ---
 
 ### Task 1: Clone Repository
-- Cloned repository from https://github.com/mycampushub/scommerce.git
+- Cloned repository from https://github.com/mycampushub/fashion.git
 - Replaced default project with cloned repo
 - Successfully installed dependencies
 
@@ -247,7 +247,7 @@ Prices are based on analysis of Bangladeshi ecommerce sites:
 ## Summary
 
 All requested features have been implemented:
-1. ✅ Cloned and set up the SCOMMERCE project
+1. ✅ Cloned and set up the FASHION project
 2. ✅ Fixed variant stock display issue in admin panel
 3. ✅ Added ability to add single variants to existing products
 4. ✅ Added default variant selection feature

@@ -3,7 +3,7 @@
  * A minimal service worker without TypeScript transpilation issues
  */
 
-const CACHE_NAME = 'scommerce-v1';
+const CACHE_NAME = 'fashion-v1';
 const urlsToCache = [
   '/',
   '/offline',

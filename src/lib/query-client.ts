@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 import { CACHE_VERSION } from '@/lib/cache-version'
 
 // Store cache version in localStorage for comparison
-const CACHE_VERSION_KEY = 'scommerce_cache_version'
+const CACHE_VERSION_KEY = 'fashion_cache_version'
 
 /**
  * Check if cache version has changed

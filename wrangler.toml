@@ -1,0 +1,49 @@
+name = "scommerce"
+compatibility_date = "2026-04-30"
+compatibility_flags = ["nodejs_compat"]
+
+# For Cloudflare Pages deployment
+main = ".open-next/worker.js"
+# Note: This worker serves both Next.js (via OpenNext) and static assets
+
+# Environment Variables
+# IMPORTANT: Set these in Cloudflare Dashboard for production deployment
+# 1. Go to: https://dash.cloudflare.com/
+# 2. Navigate to: Workers & Pages > scommerce > Settings > Environment Variables
+# 3. Add the following variables:
+#    - JWT_SECRET: Generate with: openssl rand -base64 48 | tr -d '/+=' | cut -c1-64
+#    - ADMIN_SECRET: Generate with: openssl rand -base64 48 | tr -d '/+=' | cut -c1-64
+# 4. Or run: bash setup-env-vars.sh to generate secure values
+
+# For local development with wrangler dev, add these to [vars] below or to .dev.vars file:
+[vars]
+JWT_SECRET = "sr7UraN4Bsu3BM3IuxhlipQLOWYrs0lJX7ExEF7RnvHAiqrJEXn6NUkf6HypYN"
+ADMIN_SECRET = "eWwWR7nbgndkHaUYNdmNsZentGz7vpcF0tAz7UL4ydqa8H7TrE5EXVI20GdXgh"
+# NOTE: CLOUDFLARE_ENV is set automatically by the CI/CD environment
+# Do not set it here as it causes issues with the build process
+# NOTE: For production security, set JWT_SECRET and ADMIN_SECRET as encrypted
+# secrets in Cloudflare Dashboard instead of plaintext in wrangler.toml:
+#   wrangler secret put JWT_SECRET
+#   wrangler secret put ADMIN_SECRET
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fashion-db"
+database_id = "be5c6043-1054-4db9-b0c3-e3d1e9abe33d"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "fashion-uploads"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "08d9b0d91f974eeab799ba907b15c710"
+
+# Configuration for Workers Assets
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[build]
+command = "npm run build:cloudflare"
+cwd = "."

@@ -35,10 +35,6 @@ database_id = "be5c6043-1054-4db9-b0c3-e3d1e9abe33d"
 binding = "BUCKET"
 bucket_name = "fashion-uploads"
 
-[[kv_namespaces]]
-binding = "KV"
-id = "08d9b0d91f974eeab799ba907b15c710"
-
 # Configuration for Workers Assets
 [assets]
 directory = ".open-next/assets"
